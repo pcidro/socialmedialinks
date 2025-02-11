@@ -7,83 +7,64 @@
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
   background: var(--Grey900);
-  box-sizing: border-box;
   font-family: "Inter", serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
 }
 
 * {
-  margin: 0px;
-}
-
-p {
-  font-size: 14px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .card {
-  width: 512px;
   background-color: var(--Grey800);
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: var(--White);
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 0.75rem;
 }
 
-img {
+.card img {
+  margin-bottom: 0.5rem;
+  width: 75px;
   border-radius: 50%;
-  width: 100px;
-  object-fit: cover;
 }
 
 .card h1 {
-  color: var(--White);
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  font-size: 1.75rem;
 }
-
-.card .london {
+.card .location {
   color: var(--Green);
+  margin: 0.5rem 0 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
 }
 
-.front-end {
-  color: var(--White);
-  font-weight: 400;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  padding: 0px 20px;
-  color: white;
-  display: block;
-}
-
-.social-media {
-  list-style: none;
-  width: 100%;
-  text-align: center;
+.card ul {
+  margin-top: 1.75rem;
 }
 
 ul li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
-.social-media li {
-  background: var(--Grey700);
-  border-radius: 15px;
-  padding: 10px;
+ul li a {
+  background-color: var(--Grey700);
+  color: var(--White);
+  padding: 1rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  background-color: var(--Green);
+  color: var(--Grey900);
+  cursor: pointer;
 }
